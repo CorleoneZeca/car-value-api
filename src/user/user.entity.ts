@@ -17,17 +17,11 @@ export class User {
   password: string;
 
   @AfterInsert()
-  logInsert() {
-    console.log('Inserted User with id', this.id);
-  }
+  logInsert() {}
 
   @AfterUpdate()
-  logUpdate() {
-    console.log('Updated User with id', this.id);
-  }
+  logUpdate() {}
 
   @AfterRemove()
-  logRemove() {
-    console.log('Removed User with id', this.id);
-  }
+  logRemove() {}
 }
